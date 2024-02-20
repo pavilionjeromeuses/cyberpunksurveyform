@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Survey Form</title>
+    <link rel="icon" type="image/x-icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d3a6b05-4d9e-4675-b219-c0beb493b775/dcatqgv-25381c02-1b87-434b-8cc9-49acdd0385c8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZkM2E2YjA1LTRkOWUtNDY3NS1iMjE5LWMwYmViNDkzYjc3NVwvZGNhdHFndi0yNTM4MWMwMi0xYjg3LTQzNGItOGNjOS00OWFjZGQwMzg1YzgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Kt1EhZfXRNUlmWKmIqv5qlwDb51piRtoEV2wsw3LPe0">
+    <link rel="stylesheet" href="cyberpunkSurveyFormStyle.css">
+</head>
+<body>
+    <form action="#" method="post">
+
+        <!-- INPUT TYPE TEXT -->
+        <label style="font-size: 20px; font-weight: bold;" for="name">1. Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+
+        <!-- INPUT TYPE RADIO -->
+        <label for="gender" style="font-size: 20px; font-weight: bold;">2. Gender:</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Cyborg Mecha">Cyborg Mecha</option>
+            <option value="Anime Character">Anime Character</option>
+            <option value="Minecraft Cube">Minecraft Cube</option>
+            <option value="Potato">Potato</option>
+        </select>
+
+        <!-- INPUT TYPE CHECKBOX -->
+        <label style="font-size: 20px; font-weight: bold;">3. Cyberpunk Skills (Select all that apply):</label>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="extremeCardio">Extreme Cardio</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="excellentDrivingSkills">Excellent Driving Skills</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="handToHandCombat">Hand To Hand Combat Expertise</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="militaryGradeMarksmanship">Military-Grade Marksmanship</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="splitSecondDecisionMaking">Split-Second Decision Making</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="superhumanStrength">Superhuman Strength</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="lockpicking">Lockpicking</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="incredibleInternalCompass">Incredible Internal Compass</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="bottomlessStomach">A Bottomless Stomach</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="advancedMedicalTraining">Advanced Medical Training</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="hacking">Hacking</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="bottomlessPockets">Bottomless Pockets</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="fishLikeLungCapacity">Fish-Like Lung Capacity</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="superiorPainTolerance">Superior Pain Tolerance</label><br>
+        <label class="skills"><input type="checkbox" class="custom-checkbox" name="ability" value="perfectBladderControl">Perfect Bladder Control</label><br>
+
+        <!-- INPUT TYPE DATE -->
+        <label style="font-size: 20px; font-weight: bold;" for="birthdate">4. Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <!-- INPUT TYPE EMAIL -->
+        <label style="font-size: 20px; font-weight: bold;" for="email">5. Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+        <!-- INPUT TYPE NUMBER -->
+        <label style="font-size: 20px; font-weight: bold;" for="age">6. Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter Age" required>
+
+        <!-- INPUT TYPE TEL -->
+        <label style="font-size: 20px; font-weight: bold;" style="font-size: 20px; font-weight: bold;" for="phone">7. Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+
+        <!-- INPUT TYPE URL -->
+        <label style="font-size: 20px; font-weight: bold;" for="website">8. Personal Website:</label>
+        <input type="url" id="website" name="website" placeholder="Enter Website URL">
+
+        <!-- INPUT TYPE IMAGE -->
+        <label style="font-size: 20px; font-weight: bold;" for="avatar">9. Upload Avatar:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/*">
+        
+        <!-- INPUT TYPE FILE -->
+        <label style="font-size: 20px; font-weight: bold;" for="resume">10. Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+        
+        <!-- INPUT TYPE RANGE -->
+        <label style="font-size: 20px; font-weight: bold;" for="skillLevel">11. Skill Level (0-100):</label>
+        <input type="range" id="skillLevel" name="skillLevel" min="0" max="100">
+
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" value="Submit">
+    
+    </form>
+</body>
+</html>
